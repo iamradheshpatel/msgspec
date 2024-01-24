@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Example</title>
+</head>
+<body>
+
+    <script>
+        // Define the user object
+        let user = {
+            name: "Radhesh",
+            age: 21
+        };
+
+        // Display user information using alerts
+        alert("User's name: " + user.name);
+        alert("User's name using bracket notation: " + user["name"]);
+        alert("User's age: " + user.age);
+
+        // Add a new property to the user object
+        user.isAdmin = true;
+
+        // Delete the age property from the user object
+        delete user.age;
+
+        // Prompt the user for a property to display
+        let key = prompt("What do you want to know about the user?", "name");
+
+        // Display the value of the user's chosen property
+        alert("User's " + key + ": " + user[key]);
+    </script>
+
+</body>
+</html>
